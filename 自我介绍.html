@@ -44,13 +44,11 @@
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: none;
   }
-
   .slide.active {
     opacity: 1;
     transform: translateX(0) scale(1);
     pointer-events: all;
   }
-
   .slide.exit-left {
     opacity: 0;
     transform: translateX(-60px) scale(0.95);
@@ -65,80 +63,36 @@
     letter-spacing: 2px;
   }
 
-  /* ===== Slide 1: 封面 ===== */
   .slide-cover {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #fff;
     text-align: center;
     align-items: center;
   }
-  .slide-cover .greeting {
-    font-size: 22px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    letter-spacing: 6px;
-    opacity: 0.9;
-  }
-  .slide-cover .name {
-    font-size: 56px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    letter-spacing: 8px;
-    text-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  }
-  .slide-cover .subtitle {
-    font-size: 18px;
-    font-weight: 300;
-    opacity: 0.85;
-    line-height: 1.8;
-    max-width: 550px;
-    margin: 0 auto;
-  }
-  .slide-cover .accent-bar {
-    width: 60px;
-    height: 3px;
-    background: rgba(255,255,255,0.6);
-    margin: 25px auto;
-    border-radius: 2px;
-  }
+  .slide-cover .greeting { font-size: 22px; font-weight: 300; margin-bottom: 10px; letter-spacing: 6px; opacity: 0.9; }
+  .slide-cover .name { font-size: 56px; font-weight: 700; margin-bottom: 20px; letter-spacing: 8px; text-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+  .slide-cover .subtitle { font-size: 18px; font-weight: 300; opacity: 0.85; line-height: 1.8; max-width: 550px; margin: 0 auto; }
+  .slide-cover .accent-bar { width: 60px; height: 3px; background: rgba(255,255,255,0.6); margin: 25px auto; border-radius: 2px; }
 
-  /* ===== Slide 2: 性格 ===== */
   .section-tag {
     display: inline-block;
-    font-size: 12px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #667eea;
-    margin-bottom: 8px;
+    font-size: 12px; font-weight: 500; text-transform: uppercase;
+    letter-spacing: 4px; color: #667eea; margin-bottom: 8px;
   }
   .section-title {
-    font-size: 34px;
-    font-weight: 700;
-    color: #1a1a2e;
-    margin-bottom: 28px;
-    letter-spacing: 2px;
+    font-size: 34px; font-weight: 700; color: #1a1a2e; margin-bottom: 28px; letter-spacing: 2px;
   }
-  .card-row {
-    display: flex;
-    gap: 18px;
-    flex-wrap: wrap;
-  }
+
+  .card-row { display: flex; gap: 18px; flex-wrap: wrap; }
   .card {
-    flex: 1;
-    min-width: 180px;
-    background: #f8f9fc;
-    border-radius: 14px;
-    padding: 22px 20px;
-    border-left: 4px solid #667eea;
-    transition: transform 0.2s;
+    flex: 1; min-width: 180px; background: #f8f9fc; border-radius: 14px;
+    padding: 22px 20px; border-left: 4px solid #667eea; transition: transform 0.2s;
   }
   .card:hover { transform: translateY(-3px); }
   .card .card-icon { font-size: 26px; margin-bottom: 8px; }
   .card .card-title { font-size: 16px; font-weight: 600; color: #333; margin-bottom: 6px; }
   .card .card-desc { font-size: 13px; color: #666; line-height: 1.6; }
 
-  /* ===== Slide 3: 生活习惯 ===== */
   .habit-list { list-style: none; }
   .habit-list li {
     display: flex; align-items: flex-start; gap: 14px;
@@ -147,21 +101,11 @@
   .habit-list li:last-child { border-bottom: none; }
   .habit-list .icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
 
-  /* ===== Slide 4: 家乡特产 ===== */
-  .hometown-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-  }
+  .hometown-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .hometown-item {
-    background: #fdf6f0;
-    border-radius: 12px;
-    padding: 18px 20px;
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-    border: 1px solid #f0dcc8;
-    transition: transform 0.2s;
+    background: #fdf6f0; border-radius: 12px; padding: 18px 20px;
+    display: flex; gap: 14px; align-items: flex-start;
+    border: 1px solid #f0dcc8; transition: transform 0.2s;
   }
   .hometown-item:hover { transform: translateY(-2px); }
   .hometown-item .hw-icon { font-size: 28px; flex-shrink: 0; }
@@ -173,68 +117,70 @@
     border-radius: 10px; border-left: 4px solid #e8a850;
   }
 
-  /* ===== Slide 5: 个人爱好 ===== */
-  .hobby-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
+  .hobby-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .hobby-item {
     background: linear-gradient(135deg, #f8f9fc 0%, #eef1f8 100%);
-    border-radius: 12px;
-    padding: 20px 22px;
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
+    border-radius: 12px; padding: 20px 22px;
+    display: flex; gap: 14px; align-items: flex-start;
   }
   .hobby-item .h-icon { font-size: 30px; flex-shrink: 0; }
   .hobby-item h4 { font-size: 15px; font-weight: 600; color: #333; margin-bottom: 4px; }
   .hobby-item p { font-size: 12.5px; color: #777; line-height: 1.6; }
 
-  /* ===== Slide 6: 培训心态 ===== */
+  .code-story { display: flex; flex-direction: column; gap: 16px; }
+  .code-story .story-block {
+    display: flex; gap: 16px; align-items: flex-start;
+    background: linear-gradient(135deg, #f0f4ff 0%, #e8edfb 100%);
+    border-radius: 12px; padding: 18px 20px;
+    border-left: 4px solid #4a6cf7; transition: transform 0.2s;
+  }
+  .code-story .story-block:hover { transform: translateX(3px); }
+  .code-story .story-icon { font-size: 28px; flex-shrink: 0; }
+  .code-story h4 { font-size: 14.5px; font-weight: 600; color: #2d3b6b; margin-bottom: 3px; }
+  .code-story p { font-size: 12.5px; color: #5a6a9a; line-height: 1.6; }
+
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 18px; }
+  .skill-tag {
+    display: flex; align-items: center; gap: 10px;
+    background: #fff; border-radius: 12px; padding: 14px 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); flex: 1; min-width: 150px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .skill-tag:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+  .skill-tag .skill-icon { font-size: 26px; flex-shrink: 0; }
+  .skill-tag .skill-info h5 { font-size: 14px; font-weight: 600; color: #333; margin-bottom: 2px; }
+  .skill-tag .skill-info span { font-size: 11px; color: #999; }
+  .skill-extra {
+    background: #f8f9fc; border-radius: 12px; padding: 16px 22px;
+    font-size: 13px; color: #666; line-height: 1.8;
+  }
+  .skill-extra b { color: #4a6cf7; }
+
   .mindset-block {
-    background: #f8f9fc; border-radius: 14px; padding: 24px 28px; margin-bottom: 16px;
+    background: #f8f9fc; border-radius: 14px; padding: 22px 28px; margin-bottom: 14px;
     display: flex; gap: 16px; align-items: flex-start;
   }
   .mindset-block .m-icon { font-size: 32px; flex-shrink: 0; }
   .mindset-block h4 { font-size: 16px; font-weight: 600; color: #333; margin-bottom: 4px; }
   .mindset-block p { font-size: 13px; color: #666; line-height: 1.6; }
 
-  /* ===== Slide 7: 结尾 ===== */
   .slide-end {
     background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
     color: #fff; text-align: center; align-items: center;
   }
-  .slide-end .end-title {
-    font-size: 38px; font-weight: 700; letter-spacing: 4px; margin-bottom: 16px;
-  }
-  .slide-end .end-text {
-    font-size: 17px; font-weight: 300; opacity: 0.9; line-height: 1.8; max-width: 500px;
-    margin: 0 auto 30px;
-  }
-  .slide-end .thanks {
-    font-size: 24px; letter-spacing: 6px; opacity: 0.8;
-  }
+  .slide-end .end-title { font-size: 38px; font-weight: 700; letter-spacing: 4px; margin-bottom: 16px; }
+  .slide-end .end-text { font-size: 17px; font-weight: 300; opacity: 0.9; line-height: 1.8; max-width: 500px; margin: 0 auto 30px; }
+  .slide-end .thanks { font-size: 24px; letter-spacing: 6px; opacity: 0.8; }
 
-  /* ===== Controls ===== */
   .controls {
-    position: fixed;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    z-index: 10;
+    position: fixed; bottom: 40px; left: 50%; transform: translateX(-50%);
+    display: flex; gap: 30px; align-items: center; z-index: 10;
   }
   .btn {
     width: 50px; height: 50px; border-radius: 50%;
-    border: 2px solid rgba(255,255,255,0.4);
-    background: rgba(255,255,255,0.08);
-    color: #fff; font-size: 20px; cursor: pointer;
-    transition: all 0.3s;
-    display: flex; align-items: center; justify-content: center;
-    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.4); background: rgba(255,255,255,0.08);
+    color: #fff; font-size: 20px; cursor: pointer; transition: all 0.3s;
+    display: flex; align-items: center; justify-content: center; backdrop-filter: blur(10px);
   }
   .btn:hover { background: rgba(255,255,255,0.2); border-color: #fff; }
   .btn:active { transform: scale(0.93); }
@@ -245,14 +191,13 @@
   }
   .dot.active { background: #fff; transform: scale(1.3); box-shadow: 0 0 12px rgba(255,255,255,0.6); }
 
-  /* ===== Responsive ===== */
   @media (max-width: 768px) {
     .slide { padding: 30px 28px; border-radius: 14px; }
     .slide-cover .name { font-size: 36px; letter-spacing: 4px; }
     .section-title { font-size: 24px; }
-    .hobby-grid { grid-template-columns: 1fr; }
-    .hometown-grid { grid-template-columns: 1fr; }
+    .hobby-grid, .hometown-grid { grid-template-columns: 1fr; }
     .card-row { flex-direction: column; }
+    .skill-tags { flex-direction: column; }
   }
 </style>
 </head>
@@ -260,7 +205,6 @@
 
 <div class="container">
 
-  <!-- ========== Slide 1: 封面 ========== -->
   <div class="slide slide-cover active" data-index="0">
     <div class="greeting">各位老师、各位小伙伴大家好</div>
     <div class="name">我叫孙豪迪</div>
@@ -269,10 +213,9 @@
       很高兴能在这里遇见一群志同道合的同龄人<br>
       接下来的培训学习，期待与各位朝夕相处
     </div>
-    <div class="slide-number">1 / 7</div>
+    <div class="slide-number">1 / 9</div>
   </div>
 
-  <!-- ========== Slide 2: 性格特点 ========== -->
   <div class="slide" data-index="1">
     <div class="section-tag">ABOUT ME</div>
     <div class="section-title">性格特点</div>
@@ -293,35 +236,21 @@
         <div class="card-desc">组队实训不摸鱼不甩锅，分配任务按时保质做完，团队配合度高。</div>
       </div>
     </div>
-    <div class="slide-number">2 / 7</div>
+    <div class="slide-number">2 / 9</div>
   </div>
 
-  <!-- ========== Slide 3: 日常生活习惯 ========== -->
   <div class="slide" data-index="2">
     <div class="section-tag">DAILY LIFE</div>
     <div class="section-title">日常生活习惯</div>
     <ul class="habit-list">
-      <li>
-        <span class="icon">⏰</span>
-        <span><b>作息自律</b> — 不会昼夜颠倒，提前到教室收拾桌面、静下心进入状态</span>
-      </li>
-      <li>
-        <span class="icon">🧹</span>
-        <span><b>爱整洁</b> — 书桌随身物品摆放整齐，工位和宿舍保持干净清爽</span>
-      </li>
-      <li>
-        <span class="icon">🍜</span>
-        <span><b>干饭达人</b> — 搜罗周边小吃面馆奶茶店，给大家提供避雷清单</span>
-      </li>
-      <li>
-        <span class="icon">💪</span>
-        <span><b>身体稳定</b> — 饮食规律，少重油重辣暴饮暴食，不耽误上课进度</span>
-      </li>
+      <li><span class="icon">⏰</span><span><b>作息自律</b> — 不会昼夜颠倒，提前到教室收拾桌面、静下心进入状态</span></li>
+      <li><span class="icon">🧹</span><span><b>爱整洁</b> — 书桌随身物品摆放整齐，工位和宿舍保持干净清爽</span></li>
+      <li><span class="icon">🍜</span><span><b>干饭达人</b> — 搜罗周边小吃面馆奶茶店，给大家提供避雷清单</span></li>
+      <li><span class="icon">💪</span><span><b>身体稳定</b> — 饮食规律，少重油重辣暴饮暴食，不耽误上课进度</span></li>
     </ul>
-    <div class="slide-number">3 / 7</div>
+    <div class="slide-number">3 / 9</div>
   </div>
 
-  <!-- ========== Slide 4: 家乡特产 — 荥阳 ========== -->
   <div class="slide" data-index="3">
     <div class="section-tag">HOMETOWN</div>
     <div class="section-title">家乡特产 · 荥阳</div>
@@ -331,103 +260,131 @@
     <div class="hometown-grid">
       <div class="hometown-item">
         <span class="hw-icon">🍊</span>
-        <div>
-          <h4>河阴石榴</h4>
-          <p>国家地理标志产品，粒大籽软、汁多味甜，曾是宫廷贡品，秋季必尝</p>
-        </div>
+        <div><h4>河阴石榴</h4><p>国家地理标志产品，粒大籽软、汁多味甜，曾是宫廷贡品，秋季必尝</p></div>
       </div>
       <div class="hometown-item">
         <span class="hw-icon">🌰</span>
-        <div>
-          <h4>荥阳柿子</h4>
-          <p>栽培历史超千年，制成柿饼软糯香甜、霜白肉厚，远近闻名</p>
-        </div>
+        <div><h4>荥阳柿子</h4><p>栽培历史超千年，制成柿饼软糯香甜、霜白肉厚，远近闻名</p></div>
       </div>
       <div class="hometown-item">
         <span class="hw-icon">♟️</span>
-        <div>
-          <h4>象棋之乡</h4>
-          <p>中国象棋文化重要发源地，"楚河汉界"典故即出自荥阳鸿沟</p>
-        </div>
+        <div><h4>象棋之乡</h4><p>中国象棋文化重要发源地，"楚河汉界"典故即出自荥阳鸿沟</p></div>
       </div>
       <div class="hometown-item">
         <span class="hw-icon">🏛️</span>
-        <div>
-          <h4>千年古城</h4>
-          <p>郑国故都所在地，坐拥鸿沟遗址、汉霸二王城等历史文化遗迹</p>
-        </div>
+        <div><h4>千年古城</h4><p>郑国故都所在地，坐拥鸿沟遗址、汉霸二王城等历史文化遗迹</p></div>
       </div>
     </div>
-    <div class="slide-number">4 / 7</div>
+    <div class="slide-number">4 / 9</div>
   </div>
 
-  <!-- ========== Slide 5: 个人爱好 ========== -->
   <div class="slide" data-index="4">
     <div class="section-tag">HOBBIES</div>
     <div class="section-title">个人爱好 & 业余生活</div>
     <div class="hobby-grid">
       <div class="hobby-item">
         <span class="h-icon">🎶</span>
-        <div>
-          <h4>弹奏古筝</h4>
-          <p>敲代码烦躁疲惫时的情绪出口，磨炼出耐心与沉下心解决麻烦的性子</p>
-        </div>
+        <div><h4>弹奏古筝</h4><p>敲代码烦躁疲惫时的情绪出口，磨炼出耐心与沉下心解决麻烦的性子</p></div>
       </div>
       <div class="hobby-item">
         <span class="h-icon">🎧</span>
-        <div>
-          <h4>听歌放松</h4>
-          <p>抒情慢歌、流行单曲、轻音乐常驻歌单，通勤写代码时戴着耳机</p>
-        </div>
+        <div><h4>听歌放松</h4><p>抒情慢歌、流行单曲、轻音乐常驻歌单，通勤写代码时戴着耳机</p></div>
       </div>
       <div class="hobby-item">
         <span class="h-icon">🎬</span>
-        <div>
-          <h4>治愈系影视</h4>
-          <p>偏爱治愈电影、人文纪录片，拓宽眼界，远离惊悚片</p>
-        </div>
+        <div><h4>治愈系影视</h4><p>偏爱治愈电影、人文纪录片，拓宽眼界，远离惊悚片</p></div>
       </div>
       <div class="hobby-item">
         <span class="h-icon">🚶</span>
+        <div><h4>散步 + 探店</h4><p>傍晚出门散步吹风，休息日约朋友逛市集、咖啡店、短途闲逛</p></div>
+      </div>
+    </div>
+    <div class="slide-number">5 / 9</div>
+  </div>
+
+  <div class="slide" data-index="5">
+    <div class="section-tag">MY STORY</div>
+    <div class="section-title">我与编程</div>
+    <div class="code-story">
+      <div class="story-block">
+        <span class="story-icon">💡</span>
         <div>
-          <h4>散步 + 探店</h4>
-          <p>傍晚出门散步吹风，休息日约朋友逛市集、咖啡店、短途闲逛</p>
+          <h4>从好奇到热爱</h4>
+          <p>第一次在浏览器控制台敲出 "Hello World" 的时候，就被"用代码创造东西"的感觉吸引。从那时起开始自学 Java，一步步走进了编程的世界。</p>
+        </div>
+      </div>
+      <div class="story-block">
+        <span class="story-icon">🛠️</span>
+        <div>
+          <h4>动手实践派</h4>
+          <p>喜欢边学边做，自己捣鼓 Docker 搭环境、用 Git 管项目、写小工具解决实际问题。比起死记概念，更喜欢在实战中踩坑再爬起来的那种扎实感。</p>
+        </div>
+      </div>
+      <div class="story-block">
+        <span class="story-icon">🎯</span>
+        <div>
+          <h4>选择编程的理由</h4>
+          <p>享受把一个复杂问题拆解成逻辑步骤、一行行敲出来最终跑通的那一刻。Debug 成功时的成就感，是其他事情很难替代的。选择来培训，是想把这份热爱真正打磨成能吃饭的本事。</p>
         </div>
       </div>
     </div>
-    <div class="slide-number">5 / 7</div>
+    <div class="slide-number">6 / 9</div>
   </div>
 
-  <!-- ========== Slide 6: 培训心态 ========== -->
-  <div class="slide" data-index="5">
+  <div class="slide" data-index="6">
+    <div class="section-tag">SKILLS</div>
+    <div class="section-title">技能工具箱</div>
+    <div class="skill-tags">
+      <div class="skill-tag">
+        <span class="skill-icon">☕</span>
+        <div class="skill-info"><h5>Java</h5><span>主攻语言，能独立开发</span></div>
+      </div>
+      <div class="skill-tag">
+        <span class="skill-icon">🐳</span>
+        <div class="skill-info"><h5>Docker</h5><span>容器化部署 & 环境管理</span></div>
+      </div>
+      <div class="skill-tag">
+        <span class="skill-icon">📦</span>
+        <div class="skill-info"><h5>Git / GitHub</h5><span>版本控制 & 团队协作</span></div>
+      </div>
+      <div class="skill-tag">
+        <span class="skill-icon">🗄️</span>
+        <div class="skill-info"><h5>数据库</h5><span>MySQL 基础操作</span></div>
+      </div>
+      <div class="skill-tag">
+        <span class="skill-icon">🌐</span>
+        <div class="skill-info"><h5>前端基础</h5><span>HTML / CSS / JS</span></div>
+      </div>
+      <div class="skill-tag">
+        <span class="skill-icon">🐧</span>
+        <div class="skill-info"><h5>Linux</h5><span>命令行 & 服务器基础</span></div>
+      </div>
+    </div>
+    <div class="skill-extra">
+      💬 <b>持续学习中：</b>培训期间主攻后端方向，同时保持对新技术的敏感度。实操练习里遇到环境部署、代码逻辑问题，<b>掌握的内容很乐意分享思路、一起排错</b>。
+    </div>
+    <div class="slide-number">7 / 9</div>
+  </div>
+
+  <div class="slide" data-index="7">
     <div class="section-tag">ATTITUDE</div>
     <div class="section-title">对待培训的心态</div>
     <div class="mindset-block">
       <span class="m-icon">🎯</span>
-      <div>
-        <h4>目标明确，不卷不摆</h4>
-        <p>选择培训是自己规划好的方向，不盲目内卷制造焦虑，也不摆烂混日子</p>
-      </div>
+      <div><h4>目标明确，不卷不摆</h4><p>选择培训是自己规划好的方向，不盲目内卷制造焦虑，也不摆烂混日子</p></div>
     </div>
     <div class="mindset-block">
       <span class="m-icon">💻</span>
-      <div>
-        <h4>技术基础 & 团队贡献</h4>
-        <p>自学 Java / Docker / Git，可承担后端代码编写、项目文档整理、仓库管理</p>
-      </div>
+      <div><h4>技术基础 & 团队贡献</h4><p>自学 Java / Docker / Git，可承担后端代码编写、项目文档整理、仓库管理</p></div>
     </div>
     <div class="mindset-block">
       <span class="m-icon">🔍</span>
-      <div>
-        <h4>主动排错，乐于分享</h4>
-        <p>遇到报错先自行查阅资料摸索，掌握的内容很乐意分享思路、一起排错</p>
-      </div>
+      <div><h4>主动排错，乐于分享</h4><p>遇到报错先自行查阅资料摸索，掌握的内容很乐意分享思路、一起排错</p></div>
     </div>
-    <div class="slide-number">6 / 7</div>
+    <div class="slide-number">8 / 9</div>
   </div>
 
-  <!-- ========== Slide 7: 结尾 ========== -->
-  <div class="slide slide-end" data-index="6">
+  <div class="slide slide-end" data-index="8">
     <div class="end-title">往后请多多照应</div>
     <div class="end-text">
       白天一起听课敲代码<br>
@@ -437,12 +394,11 @@
       也收获轻松舒服的相处体验
     </div>
     <div class="thanks">—— 谢谢大家 🙏</div>
-    <div class="slide-number">7 / 7</div>
+    <div class="slide-number">9 / 9</div>
   </div>
 
 </div>
 
-<!-- Navigation -->
 <div class="controls">
   <button class="btn" id="prevBtn" title="上一页">◀</button>
   <div class="dots" id="dots"></div>
@@ -458,7 +414,6 @@
     let current = 0;
     const total = slides.length;
 
-    // 创建导航点
     for (let i = 0; i < total; i++) {
       const dot = document.createElement('span');
       dot.className = 'dot' + (i === 0 ? ' active' : '');
@@ -469,15 +424,10 @@
 
     function updateSlide(oldIdx, newIdx) {
       if (oldIdx === newIdx) return;
-      // 旧 slide 退出
       slides[oldIdx].classList.remove('active');
       slides[oldIdx].classList.add(newIdx > oldIdx ? 'exit-left' : '');
       setTimeout(() => slides[oldIdx].classList.remove('exit-left'), 500);
-
-      // 新 slide 进入
       slides[newIdx].classList.add('active');
-
-      // 更新 dots
       dotsContainer.children[oldIdx].classList.remove('active');
       dotsContainer.children[newIdx].classList.add('active');
     }
@@ -493,8 +443,6 @@
 
     prevBtn.addEventListener('click', prev);
     nextBtn.addEventListener('click', next);
-
-    // 键盘导航
     document.addEventListener('keydown', e => {
       if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next();
       if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') prev();
