@@ -147,7 +147,33 @@
   .habit-list li:last-child { border-bottom: none; }
   .habit-list .icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
 
-  /* ===== Slide 4: 爱好 ===== */
+  /* ===== Slide 4: 家乡特产 ===== */
+  .hometown-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .hometown-item {
+    background: #fdf6f0;
+    border-radius: 12px;
+    padding: 18px 20px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    border: 1px solid #f0dcc8;
+    transition: transform 0.2s;
+  }
+  .hometown-item:hover { transform: translateY(-2px); }
+  .hometown-item .hw-icon { font-size: 28px; flex-shrink: 0; }
+  .hometown-item h4 { font-size: 14.5px; font-weight: 600; color: #6b3a2a; margin-bottom: 3px; }
+  .hometown-item p { font-size: 12px; color: #8b6f5e; line-height: 1.5; }
+  .hometown-intro {
+    font-size: 14px; color: #6b3a2a; margin-bottom: 20px; line-height: 1.7;
+    padding: 12px 18px; background: linear-gradient(135deg, #fef9f3, #fdf0e3);
+    border-radius: 10px; border-left: 4px solid #e8a850;
+  }
+
+  /* ===== Slide 5: 个人爱好 ===== */
   .hobby-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -165,7 +191,7 @@
   .hobby-item h4 { font-size: 15px; font-weight: 600; color: #333; margin-bottom: 4px; }
   .hobby-item p { font-size: 12.5px; color: #777; line-height: 1.6; }
 
-  /* ===== Slide 5: 培训心态 ===== */
+  /* ===== Slide 6: 培训心态 ===== */
   .mindset-block {
     background: #f8f9fc; border-radius: 14px; padding: 24px 28px; margin-bottom: 16px;
     display: flex; gap: 16px; align-items: flex-start;
@@ -174,7 +200,7 @@
   .mindset-block h4 { font-size: 16px; font-weight: 600; color: #333; margin-bottom: 4px; }
   .mindset-block p { font-size: 13px; color: #666; line-height: 1.6; }
 
-  /* ===== Slide 6: 结尾 ===== */
+  /* ===== Slide 7: 结尾 ===== */
   .slide-end {
     background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
     color: #fff; text-align: center; align-items: center;
@@ -225,6 +251,7 @@
     .slide-cover .name { font-size: 36px; letter-spacing: 4px; }
     .section-title { font-size: 24px; }
     .hobby-grid { grid-template-columns: 1fr; }
+    .hometown-grid { grid-template-columns: 1fr; }
     .card-row { flex-direction: column; }
   }
 </style>
@@ -242,7 +269,7 @@
       很高兴能在这里遇见一群志同道合的同龄人<br>
       接下来的培训学习，期待与各位朝夕相处
     </div>
-    <div class="slide-number">1 / 6</div>
+    <div class="slide-number">1 / 7</div>
   </div>
 
   <!-- ========== Slide 2: 性格特点 ========== -->
@@ -266,7 +293,7 @@
         <div class="card-desc">组队实训不摸鱼不甩锅，分配任务按时保质做完，团队配合度高。</div>
       </div>
     </div>
-    <div class="slide-number">2 / 6</div>
+    <div class="slide-number">2 / 7</div>
   </div>
 
   <!-- ========== Slide 3: 日常生活习惯 ========== -->
@@ -291,11 +318,51 @@
         <span><b>身体稳定</b> — 饮食规律，少重油重辣暴饮暴食，不耽误上课进度</span>
       </li>
     </ul>
-    <div class="slide-number">3 / 6</div>
+    <div class="slide-number">3 / 7</div>
   </div>
 
-  <!-- ========== Slide 4: 个人爱好 ========== -->
+  <!-- ========== Slide 4: 家乡特产 — 荥阳 ========== -->
   <div class="slide" data-index="3">
+    <div class="section-tag">HOMETOWN</div>
+    <div class="section-title">家乡特产 · 荥阳</div>
+    <div class="hometown-intro">
+      📍 荥阳，隶属于河南省郑州市，地处黄河之滨。历史悠久、人杰地灵，是一座兼具人文底蕴与烟火气息的豫中小城。
+    </div>
+    <div class="hometown-grid">
+      <div class="hometown-item">
+        <span class="hw-icon">🍊</span>
+        <div>
+          <h4>河阴石榴</h4>
+          <p>国家地理标志产品，粒大籽软、汁多味甜，曾是宫廷贡品，秋季必尝</p>
+        </div>
+      </div>
+      <div class="hometown-item">
+        <span class="hw-icon">🌰</span>
+        <div>
+          <h4>荥阳柿子</h4>
+          <p>栽培历史超千年，制成柿饼软糯香甜、霜白肉厚，远近闻名</p>
+        </div>
+      </div>
+      <div class="hometown-item">
+        <span class="hw-icon">♟️</span>
+        <div>
+          <h4>象棋之乡</h4>
+          <p>中国象棋文化重要发源地，"楚河汉界"典故即出自荥阳鸿沟</p>
+        </div>
+      </div>
+      <div class="hometown-item">
+        <span class="hw-icon">🏛️</span>
+        <div>
+          <h4>千年古城</h4>
+          <p>郑国故都所在地，坐拥鸿沟遗址、汉霸二王城等历史文化遗迹</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-number">4 / 7</div>
+  </div>
+
+  <!-- ========== Slide 5: 个人爱好 ========== -->
+  <div class="slide" data-index="4">
     <div class="section-tag">HOBBIES</div>
     <div class="section-title">个人爱好 & 业余生活</div>
     <div class="hobby-grid">
@@ -328,11 +395,11 @@
         </div>
       </div>
     </div>
-    <div class="slide-number">4 / 6</div>
+    <div class="slide-number">5 / 7</div>
   </div>
 
-  <!-- ========== Slide 5: 培训心态 ========== -->
-  <div class="slide" data-index="4">
+  <!-- ========== Slide 6: 培训心态 ========== -->
+  <div class="slide" data-index="5">
     <div class="section-tag">ATTITUDE</div>
     <div class="section-title">对待培训的心态</div>
     <div class="mindset-block">
@@ -356,11 +423,11 @@
         <p>遇到报错先自行查阅资料摸索，掌握的内容很乐意分享思路、一起排错</p>
       </div>
     </div>
-    <div class="slide-number">5 / 6</div>
+    <div class="slide-number">6 / 7</div>
   </div>
 
-  <!-- ========== Slide 6: 结尾 ========== -->
-  <div class="slide slide-end" data-index="5">
+  <!-- ========== Slide 7: 结尾 ========== -->
+  <div class="slide slide-end" data-index="6">
     <div class="end-title">往后请多多照应</div>
     <div class="end-text">
       白天一起听课敲代码<br>
@@ -370,7 +437,7 @@
       也收获轻松舒服的相处体验
     </div>
     <div class="thanks">—— 谢谢大家 🙏</div>
-    <div class="slide-number">6 / 6</div>
+    <div class="slide-number">7 / 7</div>
   </div>
 
 </div>
