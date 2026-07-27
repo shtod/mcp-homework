@@ -12,62 +12,35 @@
   body {
     font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
     background: #1a1a2e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    display: flex; justify-content: center; align-items: center;
+    height: 100vh; overflow: hidden;
   }
 
   .container {
-    width: 90vw;
-    max-width: 1000px;
-    height: 70vh;
-    max-height: 650px;
-    position: relative;
-    perspective: 1200px;
+    width: 90vw; max-width: 1000px; height: 70vh; max-height: 650px;
+    position: relative; perspective: 1200px;
   }
 
   .slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    padding: 50px 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    position: absolute; width: 100%; height: 100%;
+    border-radius: 20px; padding: 50px 60px;
+    display: flex; flex-direction: column; justify-content: center;
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fc 100%);
     box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-    opacity: 0;
-    transform: translateX(60px) scale(0.95);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    pointer-events: none;
+    opacity: 0; transform: translateX(60px) scale(0.95);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); pointer-events: none;
   }
-  .slide.active {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-    pointer-events: all;
-  }
-  .slide.exit-left {
-    opacity: 0;
-    transform: translateX(-60px) scale(0.95);
-  }
+  .slide.active { opacity: 1; transform: translateX(0) scale(1); pointer-events: all; }
+  .slide.exit-left { opacity: 0; transform: translateX(-60px) scale(0.95); }
 
   .slide-number {
-    position: absolute;
-    bottom: 25px;
-    right: 35px;
-    font-size: 13px;
-    color: #adb5bd;
-    letter-spacing: 2px;
+    position: absolute; bottom: 25px; right: 35px;
+    font-size: 13px; color: #adb5bd; letter-spacing: 2px;
   }
 
   .slide-cover {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: #fff;
-    text-align: center;
-    align-items: center;
+    color: #fff; text-align: center; align-items: center;
   }
   .slide-cover .greeting { font-size: 22px; font-weight: 300; margin-bottom: 10px; letter-spacing: 6px; opacity: 0.9; }
   .slide-cover .name { font-size: 56px; font-weight: 700; margin-bottom: 20px; letter-spacing: 8px; text-shadow: 0 4px 20px rgba(0,0,0,0.2); }
@@ -75,8 +48,7 @@
   .slide-cover .accent-bar { width: 60px; height: 3px; background: rgba(255,255,255,0.6); margin: 25px auto; border-radius: 2px; }
 
   .section-tag {
-    display: inline-block;
-    font-size: 12px; font-weight: 500; text-transform: uppercase;
+    display: inline-block; font-size: 12px; font-weight: 500; text-transform: uppercase;
     letter-spacing: 4px; color: #667eea; margin-bottom: 8px;
   }
   .section-title {
@@ -228,12 +200,12 @@
       <div class="card">
         <div class="card-icon">👂</div>
         <div class="card-title">善于倾听</div>
-        <div class="card-desc">学习烦心事、生活郁闷小事，都可以来找我唠嗑。</div>
+        <div class="card-desc">不管是学习上的烦心事，还是生活里的郁闷小事，都可以来找我唠嗑。</div>
       </div>
       <div class="card">
         <div class="card-icon">🤝</div>
         <div class="card-title">靠谱守信</div>
-        <div class="card-desc">组队实训不摸鱼不甩锅，分配任务按时保质做完，团队配合度高。</div>
+        <div class="card-desc">组队实训不摸鱼不甩锅，分配任务按时保质做完，团队配合度高，好沟通磨合。</div>
       </div>
     </div>
     <div class="slide-number">2 / 9</div>
@@ -243,10 +215,10 @@
     <div class="section-tag">DAILY LIFE</div>
     <div class="section-title">日常生活习惯</div>
     <ul class="habit-list">
-      <li><span class="icon">⏰</span><span><b>作息自律</b> — 不会昼夜颠倒，提前到教室收拾桌面、静下心进入状态</span></li>
-      <li><span class="icon">🧹</span><span><b>爱整洁</b> — 书桌随身物品摆放整齐，工位和宿舍保持干净清爽</span></li>
-      <li><span class="icon">🍜</span><span><b>干饭达人</b> — 搜罗周边小吃面馆奶茶店，给大家提供避雷清单</span></li>
-      <li><span class="icon">💪</span><span><b>身体稳定</b> — 饮食规律，少重油重辣暴饮暴食，不耽误上课进度</span></li>
+      <li><span class="icon">⏰</span><span><b>作息自律</b> — 不会昼夜颠倒熬夜通宵，提前到教室收拾桌面静下心进入状态</span></li>
+      <li><span class="icon">🧹</span><span><b>爱整洁</b> — 书桌、随身物品摆放整齐，工位和宿舍维持干净清爽</span></li>
+      <li><span class="icon">🍜</span><span><b>干饭达人</b> — 周边小吃面馆奶茶店门清，随时能给大家推荐避雷清单</span></li>
+      <li><span class="icon">💪</span><span><b>身体稳定</b> — 饮食规律，少重油重辣暴饮暴食，不轻易因身体耽误上课</span></li>
     </ul>
     <div class="slide-number">3 / 9</div>
   </div>
@@ -284,19 +256,19 @@
     <div class="hobby-grid">
       <div class="hobby-item">
         <span class="h-icon">🎶</span>
-        <div><h4>弹奏古筝</h4><p>敲代码烦躁疲惫时的情绪出口，磨炼出耐心与沉下心解决麻烦的性子</p></div>
+        <div><h4>弹奏古筝</h4><p>高强度的代码调试后，弹琴是最有效的情绪出口，也磨练出耐心沉着的性子</p></div>
       </div>
       <div class="hobby-item">
         <span class="h-icon">🎧</span>
-        <div><h4>听歌放松</h4><p>抒情慢歌、流行单曲、轻音乐常驻歌单，通勤写代码时戴着耳机</p></div>
+        <div><h4>听歌放松</h4><p>抒情慢歌、流行单曲、轻音乐常驻歌单，通勤和写代码发呆时都戴着耳机</p></div>
       </div>
       <div class="hobby-item">
         <span class="h-icon">🎬</span>
-        <div><h4>治愈系影视</h4><p>偏爱治愈电影、人文纪录片，拓宽眼界，远离惊悚片</p></div>
+        <div><h4>治愈系影视</h4><p>偏爱治愈电影和人文纪录片，既能打发时间也能拓宽眼界，远离惊悚片</p></div>
       </div>
       <div class="hobby-item">
         <span class="h-icon">🚶</span>
-        <div><h4>散步 + 探店</h4><p>傍晚出门散步吹风，休息日约朋友逛市集、咖啡店、短途闲逛</p></div>
+        <div><h4>散步 + 探店</h4><p>傍晚出门散步吹风，休息日约朋友逛市集、探咖啡店、短途闲逛，享受松弛生活</p></div>
       </div>
     </div>
     <div class="slide-number">5 / 9</div>
@@ -308,24 +280,15 @@
     <div class="code-story">
       <div class="story-block">
         <span class="story-icon">💡</span>
-        <div>
-          <h4>从好奇到热爱</h4>
-          <p>第一次在浏览器控制台敲出 "Hello World" 的时候，就被"用代码创造东西"的感觉吸引。从那时起开始自学 Java，一步步走进了编程的世界。</p>
-        </div>
+        <div><h4>从好奇到热爱</h4><p>第一次在浏览器控制台敲出 "Hello World" 时，就被"用代码创造东西"的感觉吸引。从那时起自学 Java，一步步走进了编程世界的大门。</p></div>
       </div>
       <div class="story-block">
         <span class="story-icon">🛠️</span>
-        <div>
-          <h4>动手实践派</h4>
-          <p>喜欢边学边做，自己捣鼓 Docker 搭环境、用 Git 管项目、写小工具解决实际问题。比起死记概念，更喜欢在实战中踩坑再爬起来的那种扎实感。</p>
-        </div>
+        <div><h4>动手实践派</h4><p>喜欢边学边做——自己捣鼓 Docker 搭环境、用 Git 管理项目、写小工具解决实际问题。比起死记概念，更享受在实战中踩坑再爬起来的扎实感。</p></div>
       </div>
       <div class="story-block">
         <span class="story-icon">🎯</span>
-        <div>
-          <h4>选择编程的理由</h4>
-          <p>享受把一个复杂问题拆解成逻辑步骤、一行行敲出来最终跑通的那一刻。Debug 成功时的成就感，是其他事情很难替代的。选择来培训，是想把这份热爱真正打磨成能吃饭的本事。</p>
-        </div>
+        <div><h4>选择培训的理由</h4><p>享受把复杂问题拆解成逻辑步骤、一行行敲出来最终跑通的那一刻。Debug 成功的成就感无可替代。来培训，是想把这份热爱打磨成真正能吃饭的本事。</p></div>
       </div>
     </div>
     <div class="slide-number">6 / 9</div>
@@ -335,33 +298,15 @@
     <div class="section-tag">SKILLS</div>
     <div class="section-title">技能工具箱</div>
     <div class="skill-tags">
-      <div class="skill-tag">
-        <span class="skill-icon">☕</span>
-        <div class="skill-info"><h5>Java</h5><span>主攻语言，能独立开发</span></div>
-      </div>
-      <div class="skill-tag">
-        <span class="skill-icon">🐳</span>
-        <div class="skill-info"><h5>Docker</h5><span>容器化部署 & 环境管理</span></div>
-      </div>
-      <div class="skill-tag">
-        <span class="skill-icon">📦</span>
-        <div class="skill-info"><h5>Git / GitHub</h5><span>版本控制 & 团队协作</span></div>
-      </div>
-      <div class="skill-tag">
-        <span class="skill-icon">🗄️</span>
-        <div class="skill-info"><h5>数据库</h5><span>MySQL 基础操作</span></div>
-      </div>
-      <div class="skill-tag">
-        <span class="skill-icon">🌐</span>
-        <div class="skill-info"><h5>前端基础</h5><span>HTML / CSS / JS</span></div>
-      </div>
-      <div class="skill-tag">
-        <span class="skill-icon">🐧</span>
-        <div class="skill-info"><h5>Linux</h5><span>命令行 & 服务器基础</span></div>
-      </div>
+      <div class="skill-tag"><span class="skill-icon">☕</span><div class="skill-info"><h5>Java</h5><span>主攻语言，能独立开发后端项目</span></div></div>
+      <div class="skill-tag"><span class="skill-icon">🐳</span><div class="skill-info"><h5>Docker</h5><span>容器化部署 & 环境配置管理</span></div></div>
+      <div class="skill-tag"><span class="skill-icon">📦</span><div class="skill-info"><h5>Git / GitHub</h5><span>版本控制 & 团队协作流程</span></div></div>
+      <div class="skill-tag"><span class="skill-icon">🗄️</span><div class="skill-info"><h5>数据库</h5><span>MySQL 基本操作 & 表设计</span></div></div>
+      <div class="skill-tag"><span class="skill-icon">🌐</span><div class="skill-info"><h5>前端基础</h5><span>HTML / CSS / JavaScript</span></div></div>
+      <div class="skill-tag"><span class="skill-icon">🐧</span><div class="skill-info"><h5>Linux</h5><span>命令行操作 & 服务器基础</span></div></div>
     </div>
     <div class="skill-extra">
-      💬 <b>持续学习中：</b>培训期间主攻后端方向，同时保持对新技术的敏感度。实操练习里遇到环境部署、代码逻辑问题，<b>掌握的内容很乐意分享思路、一起排错</b>。
+      💬 <b>持续学习中：</b>培训期间主攻后端方向，保持对新技术的敏感度。实操练习里遇到环境部署、代码逻辑问题，<b>掌握的内容很乐意分享思路、一起排错</b>。
     </div>
     <div class="slide-number">7 / 9</div>
   </div>
@@ -371,15 +316,15 @@
     <div class="section-title">对待培训的心态</div>
     <div class="mindset-block">
       <span class="m-icon">🎯</span>
-      <div><h4>目标明确，不卷不摆</h4><p>选择培训是自己规划好的方向，不盲目内卷制造焦虑，也不摆烂混日子</p></div>
+      <div><h4>目标明确，不卷不摆</h4><p>培训是自己规划好的方向。不盲目内卷制造焦虑，也不摆烂混日子，上课紧跟节奏、课后认真实操</p></div>
     </div>
     <div class="mindset-block">
       <span class="m-icon">💻</span>
-      <div><h4>技术基础 & 团队贡献</h4><p>自学 Java / Docker / Git，可承担后端代码编写、项目文档整理、仓库管理</p></div>
+      <div><h4>技术基础 & 团队贡献</h4><p>自学 Java / Docker / Git，写代码、整文档、配环境都算熟练。可承担后端代码编写、项目文档整理、仓库管理</p></div>
     </div>
     <div class="mindset-block">
       <span class="m-icon">🔍</span>
-      <div><h4>主动排错，乐于分享</h4><p>遇到报错先自行查阅资料摸索，掌握的内容很乐意分享思路、一起排错</p></div>
+      <div><h4>先自己查，再一起排</h4><p>遇到报错或听不懂的，先自行查阅资料摸索解决。搞不定主动和同学交流探讨，掌握的内容很乐意分享</p></div>
     </div>
     <div class="slide-number">8 / 9</div>
   </div>
@@ -387,9 +332,10 @@
   <div class="slide slide-end" data-index="8">
     <div class="end-title">往后请多多照应</div>
     <div class="end-text">
-      白天一起听课敲代码<br>
-      下课结伴干饭，熬夜赶实训项目<br>
-      互相体谅、互帮互助<br>
+      白天一起听课敲代码，熬夜赶实训项目<br>
+      下课结伴干饭，顺路一起返程<br>
+      压力大的时候互相吐槽解压<br>
+      期末考核、阶段测试互相分享复习要点<br><br>
       既学到实打实的技术本领<br>
       也收获轻松舒服的相处体验
     </div>
